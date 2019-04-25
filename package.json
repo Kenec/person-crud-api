@@ -1,0 +1,41 @@
+{
+  "name": "person-crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:dev": "nodemon --exec babel-node server/index.js",
+    "build": "babel ./server --out-dir dist/ --copy-files",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenec/person-crud-api.git"
+  },
+  "author": "Kenechukwu Nnamani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kenec/person-crud-api/issues"
+  },
+  "homepage": "https://github.com/Kenec/person-crud-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.18.11"
+  }
+}
