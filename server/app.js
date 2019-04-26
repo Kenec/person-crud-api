@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import routes from './routes';
 
 dotenv.config();
 const app = express();
@@ -24,5 +25,6 @@ db.once('open', () => console.log('We are connected!'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => res.status(200).json({ message: 'Welcome to People REST API' }));
+app.use('/', routes);
 
 export default app;
