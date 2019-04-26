@@ -12,7 +12,7 @@ let connectionString;
 if (process.env.NODE_ENV === 'production') {
   connectionString = process.env.PROD_DATABASE_URL;
 } else if (process.env.NODE_ENV === 'test') {
-  connectionString = process.env.TEST_DATA_URL;
+  connectionString = process.env.TEST_DATABASE_URL;
 } else {
   connectionString = process.env.DEV_DATABASE_URL;
 }
