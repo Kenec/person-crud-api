@@ -1,0 +1,26 @@
+{
+  "person": {
+    "person1": {
+        "firstName": "Kene",
+        "lastName": "Nnamani",
+        "age": 29,
+        "favouriteColour": "Brown"
+    },
+    "person2": {
+        "firstName": "Nzube",
+        "lastName": "Nnamani",
+        "age": 27,
+        "favouriteColour": ""
+    },
+    "personWithInvaildName": {
+        "firstName": " ",
+        "lastName": "Nnamani",
+        "age": "27",
+        "favouriteColour": ""
+    },
+    "updatePerson1": {
+      "age": 28,
+      "favouriteColour": "White"
+    }
+  }
+}
