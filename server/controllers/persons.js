@@ -83,7 +83,7 @@ export default class PersonsController {
       person.firstName = req.body.firstName || person.firstName;
       person.lastName = req.body.lastName || person.lastName;
       person.age = req.body.age || person.age;
-      person.favouriteColour = req.body.age || person.favouriteColour;
+      person.favouriteColour = req.body.favouriteColour || person.favouriteColour;
 
       // check if the new fields are empty or invalid
       if (person.firstName === '' || person.lastName === '') {
