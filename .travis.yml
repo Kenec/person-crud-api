@@ -2,43 +2,12 @@ language: node_js
 node_js:
   - "10.5.0"
 
-env:
-  - TEST_DATABASE_URL=mongodb://localhost/person
-
 install:
   - npm install
 script:
   - npm run test
-services:
+service:
   - mongodb
 cache:
   directories:
     - node_modules
-
-# stages:
-#   - Compile
-#   - Tests
-#   - Package
-#   - name: Deploy
-#     if: branch = master
-
-# jobs:
-#   include:
-#     - stage: Compile
-#       before_install:
-#         - echo "script to execute in the before_install phase"
-#       install:
-#         - echo "script to execute in the install phase"
-#       before_script:
-#         - echo "script to execute in the before_script phase"
-#       script: echo "./compile 1"
-
-#     - stage: Tests
-#       script: echo "./test 1"
-#       script: echo "./test 2"
-
-#     - stage: Package
-#       script: echo "./package 1"
-
-#     - stage: Deploy
-#       script: echo "./deploy"
