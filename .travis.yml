@@ -1,0 +1,16 @@
+language: ndoe_js
+ndoe_js:
+  - "10.5.0"
+
+env:
+  - TEST_DATABASE_URL=mongodb://localhost/person
+
+install:
+  - npm install
+script:
+  - npm run test
+services:
+  - mongodb
+cache:
+  directories:
+    - node_modules
